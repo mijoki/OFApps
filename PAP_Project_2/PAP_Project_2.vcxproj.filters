@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameObject\Building\Building.cpp" />
+    <ClCompile Include="src\GameObject\Map\Map.cpp" />
+    <ClCompile Include="src\GameObject\Map\MapNode.cpp" />
+    <ClCompile Include="src\GameObject\GameObject.cpp" />
+    <ClCompile Include="src\GameObject\Creature\Creature.cpp" />
+    <ClCompile Include="src\GameObject\Building\Warehouse.cpp" />
+    <ClCompile Include="src\GameObject\Building\Farm.cpp" />
+    <ClCompile Include="src\GameObject\Building\Forest.cpp" />
+    <ClCompile Include="src\GameObject\Building\House.cpp" />
+    <ClCompile Include="src\GameObject\Creature\Cow.cpp" />
+    <ClCompile Include="src\GameObject\Creature\Person.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{89bad85c-5498-4094-90d3-65df6be3b962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject">
+      <UniqueIdentifier>{b228fb49-d478-4f49-a888-a7a5be5273bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject\Building">
+      <UniqueIdentifier>{0e249530-8c02-443f-aff4-3cfdb9154206}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject\Creature">
+      <UniqueIdentifier>{a861e0c2-856b-4bca-8d31-3dfd314b0b5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject\Creature\Friendly">
+      <UniqueIdentifier>{cbc55d9c-8927-477f-a7e0-c65311e102d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject\Creature\Enemy">
+      <UniqueIdentifier>{20a97aa4-5ce1-4c7b-ac9c-b6dcdb921540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject\Creature\Neutral">
+      <UniqueIdentifier>{cea9857f-8980-4c43-8dae-dbabaf12fd31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GameObject\Map">
+      <UniqueIdentifier>{e525c4c5-f85f-4236-9944-d5abae524914}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameObject\Building\Building.h" />
+    <ClInclude Include="src\GameObject\Map\Map.h" />
+    <ClInclude Include="src\GameObject\Map\MapNode.h" />
+    <ClInclude Include="src\GameObject\GameObject.h" />
+    <ClInclude Include="src\GameObject\Creature\Creature.h" />
+    <ClInclude Include="src\GameObject\Building\Warehouse.h" />
+    <ClInclude Include="src\GameObject\Building\Farm.h" />
+    <ClInclude Include="src\GameObject\Building\Forest.h" />
+    <ClInclude Include="src\GameObject\Building\House.h" />
+    <ClInclude Include="src\GameObject\Creature\Cow.h" />
+    <ClInclude Include="src\GameObject\Creature\Person.h" />
+  </ItemGroup>
+</Project>
