@@ -7,6 +7,7 @@ private:
 	int walkValue;
 	bool visited;
 	int curScore;
+	vector<GameObject*> inNode;
 	ofVec2f cameFrom;
 
 public:
@@ -21,5 +22,7 @@ public:
 	ofVec2f getCameFrom();
 	void setCameFrom(ofVec2f inValue);
 	vector<ofVec2f> getAdj();
+	vector<GameObject&>& getInNode();
+	void setInNode(vector<GameObject>& inVec);
 };
 
