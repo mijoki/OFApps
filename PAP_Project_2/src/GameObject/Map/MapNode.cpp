@@ -70,12 +70,12 @@ vector<ofVec2f> MapNode::getAdj()
 	return toReturn;
 }
 
-vector<GameObject&>& MapNode::getInNode()
+vector<GameObject*>& MapNode::getInNode()
 {
 	return inNode;
 }
 
-void MapNode::setInNode(vector<GameObject&>& inVec)
+void MapNode::setInNode(vector<GameObject*>& inVec)
 {
 	inNode = inVec;
 }

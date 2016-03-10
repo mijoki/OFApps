@@ -22,7 +22,7 @@ public:
 	ofVec2f getCameFrom();
 	void setCameFrom(ofVec2f inValue);
 	vector<ofVec2f> getAdj();
-	vector<GameObject&>& getInNode();
-	void setInNode(vector<GameObject>& inVec);
+	vector<GameObject*>& getInNode();
+	void setInNode(vector<GameObject*>& inVec);
 };
 

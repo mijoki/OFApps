@@ -37,16 +37,6 @@ void GameObject::draw()
 	myImage->draw(pos.x,pos.y);
 }
 
-void GameObject::setPos(ofVec2f inPos)
-{
-	pos = inPos;
-}
-
-void GameObject::setPos(int _x, int _y)
-{
-	pos = ofVec2f(_x, _y);
-}
-
 ofVec2f GameObject::getPos()
 {
 	return pos;
