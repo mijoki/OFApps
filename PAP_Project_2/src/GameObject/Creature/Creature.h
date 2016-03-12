@@ -12,6 +12,7 @@ public:
 	Creature(shared_ptr<Map> inValue);
 	Creature();
 	~Creature();
+	virtual void draw() = 0;
 	void move(int _x, int _y);
 	void moveUp();
 	void moveDown();

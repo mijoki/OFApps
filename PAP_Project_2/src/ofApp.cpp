@@ -20,8 +20,7 @@ void ofApp::setup(){
 			map->getNode(x, y).setMyImage(grass);
 		}
 	}
-	test = Creature(map);
-	test.setPos(0, 0);
+	testHouse = Warehouse(map);
 	testHouse.setPos(0, 0);
 	shared_ptr<ofImage> warehouseImage = make_shared<ofImage>();
 	warehouseImage->load("warehouse.jpg");
@@ -35,12 +34,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	for (int x = 0; x < 12;x++) {
-		for (int y = 0;y < 12;y++) {
-			map->getNode(x, y).draw();
-		}
-	}
-	test.move(10,10);
+	
+			map->draw();
 	testHouse.draw();
 }
 

@@ -4,7 +4,8 @@ class Farm :
 	public Building
 {
 public:
-	Farm();
+	Farm(shared_ptr<Map> inMap);
 	~Farm();
+	virtual void draw();
 };
 

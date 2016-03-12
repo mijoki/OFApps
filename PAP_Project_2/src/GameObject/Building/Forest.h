@@ -5,7 +5,8 @@ class Forest :
 	public Building
 {
 public:
-	Forest();
+	Forest(shared_ptr<Map> inMap);
 	~Forest();
+	virtual void draw();
 };
 

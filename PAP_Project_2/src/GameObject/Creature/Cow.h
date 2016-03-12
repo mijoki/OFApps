@@ -6,5 +6,6 @@ class Cow :
 public:
 	Cow();
 	~Cow();
+	virtual void draw();
 };
 

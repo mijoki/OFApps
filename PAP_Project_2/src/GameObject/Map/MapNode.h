@@ -13,6 +13,7 @@ private:
 public:
 	MapNode(ofVec2f inValue);
 	~MapNode();
+	virtual void draw();
 	int getWalkValue();
 	void setWalkValue(int inValue);
 	bool getVisited();

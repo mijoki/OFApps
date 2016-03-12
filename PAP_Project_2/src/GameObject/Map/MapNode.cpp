@@ -16,6 +16,11 @@ MapNode::~MapNode()
 {
 }
 
+void MapNode::draw()
+{
+	getMyImage()->draw(getPos());
+}
+
 int MapNode::getWalkValue()
 {
 	return walkValue;

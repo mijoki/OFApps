@@ -2,7 +2,6 @@
 
 #include "ofMain.h"
 #include "../src/GameObject/Map/Map.h"
-#include "../src/GameObject/Creature/Creature.h"
 #include "../src/GameObject/Building/Warehouse.h"
 
 
@@ -10,7 +9,6 @@ class ofApp : public ofBaseApp{
 private:
 	shared_ptr<Map> map;
 	shared_ptr<ofImage> grass;
-	Creature test;
 	Warehouse testHouse;
 
 	public:

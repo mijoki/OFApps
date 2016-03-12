@@ -15,9 +15,9 @@ public:
 	void setMyImage(shared_ptr<ofImage> inImage);
 	void setHealth(float inHealth);
 	shared_ptr<ofImage> getMyImage();
-	virtual void draw();
-	virtual void setPos(ofVec2f inPos) = 0;
-	virtual void setPos(int _x, int _y) = 0;
+	virtual void draw() = 0;
+	void setPos(ofVec2f inPos);
+	void setPos(int _x, int _y);
 	ofVec2f getPos();
 };
 

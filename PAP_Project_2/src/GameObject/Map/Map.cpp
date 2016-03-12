@@ -11,6 +11,15 @@ Map::~Map()
 {
 }
 
+void Map::draw()
+{
+	for (int x = 0; x < 12;x++) {
+		for (int y = 0;y < 12;y++) {
+			getNode(x, y).draw();
+		}
+	}
+}
+
 void Map::addLine()
 {
 	vector<MapNode> in;

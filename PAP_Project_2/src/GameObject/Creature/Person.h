@@ -6,5 +6,6 @@ class Person :
 public:
 	Person();
 	~Person();
+	virtual void draw();
 };
 

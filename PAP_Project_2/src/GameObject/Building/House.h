@@ -4,7 +4,8 @@ class House :
 	public Building
 {
 public:
-	House();
+	House(shared_ptr<Map> inMap);
 	~House();
+	virtual void draw();
 };
 

@@ -5,7 +5,8 @@ class Warehouse :
 	public Building
 {
 public:
-	Warehouse();
+	Warehouse(shared_ptr<Map> inMap);
 	~Warehouse();
+	virtual void draw();
 };
 
