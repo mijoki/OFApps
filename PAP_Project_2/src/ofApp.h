@@ -7,15 +7,14 @@
 
 class ofApp : public ofBaseApp{
 private:
-	shared_ptr<Map> map;
+	shared_ptr<Map> map = make_shared<Map>();
 	shared_ptr<ofImage> grass;
-	Warehouse testHouse;
+	vector<Building*> buildings;
 
 	public:
 		void setup();
 		void update();
 		void draw();
-
 		void keyPressed(int key);
 		void keyReleased(int key);
 		void mouseMoved(int x, int y );

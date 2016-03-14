@@ -10,7 +10,7 @@ private:
 	ofVec2f pos;
 public:
 	GameObject();
-	~GameObject();
+	virtual ~GameObject();
 	float getHealth();
 	void setMyImage(shared_ptr<ofImage> inImage);
 	void setHealth(float inHealth);

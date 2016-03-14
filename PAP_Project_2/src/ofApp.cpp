@@ -20,11 +20,11 @@ void ofApp::setup(){
 			map->getNode(x, y).setMyImage(grass);
 		}
 	}
-	testHouse = Warehouse(map);
-	testHouse.setPos(0, 0);
+	buildings.push_back(new Warehouse(map));
+	buildings[0]->setPos(0, 0);
 	shared_ptr<ofImage> warehouseImage = make_shared<ofImage>();
 	warehouseImage->load("warehouse.jpg");
-	testHouse.setMyImage(warehouseImage);
+	buildings[0]->setMyImage(warehouseImage);
 }
 
 //--------------------------------------------------------------
@@ -36,7 +36,7 @@ void ofApp::update(){
 void ofApp::draw(){
 	
 			map->draw();
-	testHouse.draw();
+	buildings[0]->draw();
 }
 
 //--------------------------------------------------------------

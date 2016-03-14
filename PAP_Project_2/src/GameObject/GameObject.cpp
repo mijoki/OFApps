@@ -41,3 +41,11 @@ ofVec2f GameObject::getPos()
 {
 	return pos;
 }
+
+void GameObject::setPos(int _x, int _y) {
+	pos = ofVec2f(_x, _y);
+}
+
+void GameObject::setPos(ofVec2f inPos) {
+	pos = inPos;
+}

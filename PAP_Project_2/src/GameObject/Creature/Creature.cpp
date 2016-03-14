@@ -22,11 +22,6 @@ void Creature::moveUp() {
 	map->getNode(getPos().x, getPos().y - 1).getInNode().push_back(this);
 	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
 	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
-	/*for (int i = 0;i < inNode.size();i++) {
-		if (this == inNode[i]) {
-			inNode.erase(inNode.begin()+(i-1));
-		}
-	}*/
 	setPos(getPos().x, getPos().y - 1);
 
 }
