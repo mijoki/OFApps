@@ -175,6 +175,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Handler.cpp" />
     <ClCompile Include="src\GameObject\Creature\Cow.cpp" />
     <ClCompile Include="src\GameObject\Building\Farm.cpp" />
     <ClCompile Include="src\GameObject\Building\Forest.cpp" />
@@ -190,6 +191,7 @@
     <ClCompile Include="src\GameObject\Building\Warehouse.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Handler.h" />
     <ClInclude Include="src\GameObject\Creature\Cow.h" />
     <ClInclude Include="src\GameObject\Building\Farm.h" />
     <ClInclude Include="src\GameObject\Building\Forest.h" />
@@ -200,6 +202,7 @@
     <ClInclude Include="src\GameObject\GameObject.h" />
     <ClInclude Include="src\GameObject\Map\Map.h" />
     <ClInclude Include="src\GameObject\Map\MapNode.h" />
+    <ClInclude Include="src\Headers.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\GameObject\Building\Warehouse.h" />
   </ItemGroup>

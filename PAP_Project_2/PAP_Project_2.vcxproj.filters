@@ -18,6 +18,7 @@
     <ClCompile Include="src\GameObject\Building\House.cpp" />
     <ClCompile Include="src\GameObject\Creature\Cow.cpp" />
     <ClCompile Include="src\GameObject\Creature\Person.cpp" />
+    <ClCompile Include="src\Handler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -63,5 +64,7 @@
     <ClInclude Include="src\GameObject\Building\House.h" />
     <ClInclude Include="src\GameObject\Creature\Cow.h" />
     <ClInclude Include="src\GameObject\Creature\Person.h" />
+    <ClInclude Include="src\Headers.h" />
+    <ClInclude Include="src\Handler.h" />
   </ItemGroup>
 </Project>

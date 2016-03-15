@@ -1,15 +1,12 @@
 #pragma once
 
 #include "ofMain.h"
-#include "../src/GameObject/Map/Map.h"
-#include "../src/GameObject/Building/Warehouse.h"
+#include "Handler.h"
 
 
 class ofApp : public ofBaseApp{
 private:
-	shared_ptr<Map> map = make_shared<Map>();
-	shared_ptr<ofImage> grass;
-	vector<Building*> buildings;
+	Handler handler;
 
 	public:
 		void setup();

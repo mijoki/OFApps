@@ -14,6 +14,7 @@ public:
 	~Creature();
 	virtual void draw() = 0;
 	void move(int _x, int _y);
+	void move(ofVec2f inDest);
 	void moveUp();
 	void moveDown();
 	void moveRight();

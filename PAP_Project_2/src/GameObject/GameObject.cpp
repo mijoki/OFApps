@@ -5,6 +5,7 @@
 
 GameObject::GameObject()
 {
+	setPos(0, 0);
 }
 
 

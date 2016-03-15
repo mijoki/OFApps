@@ -19,65 +19,41 @@ Creature::~Creature()
 }
 
 void Creature::moveUp() {
-	map->getNode(getPos().x, getPos().y - 1).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x, getPos().y - 1);
 
 }
 
 void Creature::moveDown() {
-	map->getNode(getPos().x, getPos().y + 1).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x, getPos().y + 1);
 
 }
 
 void Creature::moveLeft() {
-	map->getNode(getPos().x-1, getPos().y).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x-1, getPos().y);
 
 }
 
 void Creature::moveRight() {
-	map->getNode(getPos().x+1, getPos().y).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x+1, getPos().y);
 
 }
 
 void Creature::moveRU() {
-	map->getNode(getPos().x+1, getPos().y - 1).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x+1, getPos().y - 1);
 
 }
 
 void Creature::moveRD() {
-	map->getNode(getPos().x+1, getPos().y + 1).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x+1, getPos().y + 1);
 
 }
 
 void Creature::moveLU() {
-	map->getNode(getPos().x-1, getPos().y - 1).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x-1, getPos().y - 1);
 
 }
 
 void Creature::moveLD() {
-	map->getNode(getPos().x-1, getPos().y + 1).getInNode().push_back(this);
-	vector<GameObject*> inNode = map->getNode(getPos()).getInNode();
-	remove_if(inNode.begin(), inNode.end(), [this](GameObject* inObj) {return this == inObj;});
 	setPos(getPos().x-1, getPos().y + 1);
 
 }
@@ -87,7 +63,7 @@ void Creature::move(int _x, int _y)
 	if(getPos().x==_x&&getPos().y==_y){
 		return;
 } else if (getPos().x == _x) {
-		if (getPos().y < _y) {
+		if (getPos().y > _y) {
 			moveUp();
 		}
 		else {
@@ -104,7 +80,7 @@ void Creature::move(int _x, int _y)
 	}
 	else {
 		if (getPos().x > _x) {
-			if (getPos().y < _y) {
+			if (getPos().y > _y) {
 				moveLU();
 			}
 			else {
@@ -112,7 +88,7 @@ void Creature::move(int _x, int _y)
 			}
 		}
 		else {
-			if (getPos().y < _y) {
+			if (getPos().y > _y) {
 				moveRU();
 			}
 			else {
@@ -187,4 +163,9 @@ void Creature::move(int _x, int _y)
 	setPos(path[0]);
 	path.erase(path.begin());
 	*/
+	}
+
+	void Creature::move(ofVec2f inDest)
+	{
+		move(inDest.x, inDest.y);
 	}

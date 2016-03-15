@@ -10,33 +10,18 @@ Once a basic game is done (Basic movement, basic gameplay mechanics, etc) I will
 */
 
 void ofApp::setup(){
-	grass = make_shared<ofImage>();
-	grass->load("grass.jpg");
-	map = make_shared<Map>();
-	for (int x = 0;x < 12;x++) {
-		map->addLine();
-		for (int y = 0; y < 12;y++) {
-			map->addNode(x,y);
-			map->getNode(x, y).setMyImage(grass);
-		}
-	}
-	buildings.push_back(new Warehouse(map));
-	buildings[0]->setPos(0, 0);
-	shared_ptr<ofImage> warehouseImage = make_shared<ofImage>();
-	warehouseImage->load("warehouse.jpg");
-	buildings[0]->setMyImage(warehouseImage);
+	
+
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+	handler.update();
 }
 
 //--------------------------------------------------------------
-void ofApp::draw(){
-	
-			map->draw();
-	buildings[0]->draw();
+void ofApp::draw() {
+	handler.draw();
 }
 
 //--------------------------------------------------------------

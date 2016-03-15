@@ -2,15 +2,33 @@
 
 
 
-Person::Person()
+Person::Person(shared_ptr<Map> inMap):Creature(inMap)
 {
 }
 
+Person::Person() {
+
+}
 
 Person::~Person()
 {
 }
 
 void Person::draw() {
-	getMyImage()->draw(getPos());
+	getMyImage()->draw(getPos().x*50,getPos().y*50);
 }
+/*
+Person::doJob()
+{
+	ofVec2f jobPos = findNearestJob();
+	if (getPos() != jobPos) {
+		move(jobPos);
+	} else {
+		switch(jobID):
+			case(Farmer) {
+			if(ofGetElapsedTimef()%5==0){
+
+		}
+		}
+	}
+	}*/
