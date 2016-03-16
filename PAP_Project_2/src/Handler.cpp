@@ -20,10 +20,7 @@ Handler::Handler()
 	inImg->load("Farm.jpg");
 	images.push_back(inImg);
 	inImg = make_shared<ofImage>();
-	inImg->load("Male.png");
-	images.push_back(inImg);
-	inImg = make_shared<ofImage>();
-	inImg->load("Female.png");
+	inImg->load("Person.png");
 	images.push_back(inImg);
 	inImg = make_shared<ofImage>();
 	inImg->load("Cow.png");
@@ -47,7 +44,7 @@ Handler::Handler()
 	}
 	Person* testPerp = new Person(map);
 	gameObjects.push_back(testPerp);
-	testPerp->setMyImage(images[imageSheet::male]);
+	testPerp->setMyImage(images[imageSheet::person]);
 }
 
 

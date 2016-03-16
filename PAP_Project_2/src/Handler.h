@@ -8,12 +8,11 @@ enum imageSheet {
 	forest = 2,
 	mine = 3,
 	farm = 4,
-	male = 5,
-	female = 6,
-	cow = 7,
-	house = 8,
-	stockPile = 9,
-	onyxHorse = 10
+	person = 5,
+	cow = 6,
+	house = 7,
+	stockPile = 8,
+	onyxHorse = 9
 };
 
 class Handler
